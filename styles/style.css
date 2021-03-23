@@ -33,22 +33,22 @@ body {
 
 #paper {
   position: absolute;
-  top: 8.5rem;
+  top: 20rem;
   left: 0rem;
   background-color: purple;
 }
 
 #scissors {
   position: absolute;
-  top: 8.5rem;
+  top: 20rem;
   right: 0rem;
   background-color: yellow;
 }
 
 #rock {
   position: absolute;
-  bottom: 5rem;
-  right: 7rem;
+  bottom: 9rem;
+  right: 8.5rem;
   background-color: chartreuse;
 }
 
