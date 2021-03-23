@@ -1,0 +1,167 @@
+/* :root {
+  --body-background-color: ;
+} */
+
+.counter-container {
+  width: 70%;
+  height: 20%;
+  border: 2px white solid;
+  border-radius: 0.5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.controls {
+  margin-top: 5rem;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #141539;
+  background-image: linear-gradient(#1f3756, #141539);
+}
+
+.triange {
+  position: relative;
+}
+
+#paper {
+  position: absolute;
+  top: 8.5rem;
+  left: 0rem;
+  background-color: purple;
+}
+
+#scissors {
+  position: absolute;
+  top: 8.5rem;
+  right: 0rem;
+  background-color: yellow;
+}
+
+#rock {
+  position: absolute;
+  bottom: 5rem;
+  right: 7rem;
+  background-color: chartreuse;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  z-index: 1;
+}
+
+.modal-content {
+  position: fixed;
+  z-index: 100;
+  background: white;
+  border-radius: 10px;
+  width: 80%;
+  top: 30vh;
+  left: 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  display: none;
+  animation: fade-slide-in 0.3s ease-out forwards;
+  z-index: 2;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.disable-modal {
+  display: none;
+}
+
+.enable-modal {
+  display: inline-block;
+}
+
+.disable-button {
+  display: none;
+}
+
+.enable-button {
+  display: inline-block;
+}
+
+#backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
+  pointer-events: none;
+  display: none;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
+@media (min-width: 768px) and (min-height: 529px) {
+  #paper {
+    position: absolute;
+    top: 20%;
+    left: 27%;
+  }
+
+  #scissors {
+    position: absolute;
+    top: 20%;
+    right: 27%;
+  }
+
+  #rock {
+    position: absolute;
+    bottom: 20%;
+    right: 46%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #paper {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+  }
+
+  #scissors {
+    position: absolute;
+    top: 30%;
+    right: 36%;
+  }
+
+  #rock {
+    position: absolute;
+    bottom: 15%;
+    right: 46%;
+  }
+
+  .attribution {
+    margin-top: 2rem;
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
