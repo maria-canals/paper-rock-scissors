@@ -26,8 +26,8 @@ body {
 }
 
 .inner-container {
-	height: 500px;
-	width: 700px;
+	height: 550px;
+	width: 300px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -62,21 +62,21 @@ body {
 #paper {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 10%;
 	background-color: purple;
 }
 
 #scissors {
 	position: absolute;
 	top: 0;
-	right: 0rem;
+	right: 10%;
 	background-color: yellow;
 }
 
 #rock {
 	position: absolute;
-	bottom: 0;
-	right: 39%;
+	bottom: 5%;
+	right: 37%;
 	background-color: chartreuse;
 }
 
@@ -143,6 +143,14 @@ button {
 }
 
 @media (min-width: 768px) {
+	.inner-container {
+		height: 500px;
+		width: 700px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
 	#paper {
 		position: absolute;
 		top: 0;
