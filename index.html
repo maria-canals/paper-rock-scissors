@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-  <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="/styles/style.css">
-  <script src="/script/app.js" defer></script>
-  <!-- Score
-  Rules
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  You Win
-  You Lose
-  -->
-  <button id="reset-button" class="disable-button">Play Again</button>
-  
-</head>
-<body>
-  <div id="backdrop"></div>
-  <div class="counter-container">
-    <div class="user-counter">0</div>
-    <div class="controls-names">ROCK, PAPER, SCISSORS</div>
-  </div>
+		<title>Frontend Mentor | Rock, Paper, Scissors</title>
 
-  <div class="modal-content disable-modal">
-    <div class="modal-body">
-      <p class="modal-userschoice">The user's choice is:</p>
-      <p class="modal-coputerschoice">The computer's choice is:</p>
-      <p class="modal-winner"></p>
+		<link rel="stylesheet" href="/styles/style.css" />
+		<script src="/script/app.js" defer></script>
+	</head>
 
-    </div>
-  </div>
+	<body>
+		<div id="backdrop"></div>
 
-    <div class="controls">
-      <button id="paper">
-        <img class="paper-img" src="/images/icon-paper.svg" alt="paper">
-      </button>
-      <button id="scissors">
-        <img src="/images/icon-scissors.svg" alt="scissors">
-      </button>
-      <button id="rock">
-        <img src="/images/icon-rock.svg" alt="rock">
-      </button>
-      <img class="triange" src="/images/bg-triangle.svg" alt="">
-    </div>
+		<div class="modal-content disable-modal">
+			<div class="modal-body">
+				<p class="modal-userschoice">The user's choice is:</p>
+				<p class="modal-coputerschoice">The computer's choice is:</p>
+				<p class="modal-winner"></p>
+			</div>
+		</div>
 
-  <div class="attribution">
-    <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. </p>
-    <p>Coded by <a href="#">Your Name Here</a>.</p>
-  </div>
-</body>
+		<div class="main-container">
+			<div class="inner-container">
+				<div class="counter-container">
+					<div class="controls-names">Choose: Paper, Rock or Scissors</div>
+					<div class="pointss">Points <span class="user-counter">0</span></div>
+					<div class="final-result"></div>
+				</div>
+
+				<div class="controls">
+					<button id="paper">
+						<img class="controls_icon" src="/images/paper.png" alt="paper" />
+					</button>
+					<button id="scissors">
+						<img
+							class="controls_icon"
+							src="/images/scissors.png"
+							alt="scissors"
+						/>
+					</button>
+					<button id="rock">
+						<img class="controls_icon" src="/images/rock.png" alt="rock" />
+					</button>
+				</div>
+
+				<button id="reset-button" class="disable-button">Play Again</button>
+			</div>
+		</div>
+	</body>
 </html>
